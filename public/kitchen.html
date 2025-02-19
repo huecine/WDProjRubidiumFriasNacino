@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Little Critters | Your Critter</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="keywords" content="cs3,html,css,pshs" />
+    <meta name="description" content="Tamagotchi-inspired Digital Pet Game" />
+    <meta name="author" content="Amber Niccole Nacino, Sabrina Frias" />
+    <link rel="icon" type="image/png" href="/img/icon.png" />
+    <meta name="revised" content="Dec 2024" />
+    <link href="stylekitchen.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body onload="cashInitialize()">
+    <!--Header / Navigation Bar-->
+    <header>
+      <nav>
+        <a href="/index.html"><img src="img/home.png" /></a>
+        <a href="/game.html"><img src="img/egg.png" /></a>
+        <a href="/instru.html"><img src="img/ques.png" /></a>
+        <a href="/itemshop.html"><img src="img/shop.png" /></a>
+        <a href="/kitchen.html"><img src="img/kitchen.png" /></a>
+        <h1>Kitchen</h1> <div id="currency">0</div>
+      </nav>
+    </header>
+
+    
+
+
+  <section> 
+    <!--Column for Left Sidebar-->
+    <div class="column" id="sidebar-left"></div>
+
+    <!--Column for Main Content-->
+    <div class="column" id="main-content">
+      <div id = "div-index-header">
+          <h1> Kitchen </h1> 
+        </div>
+
+      <div id = "cookbook">
+        <div id = "leftPage" class = "page"> 
+          <h5> Note: double click the pictures to select </h5>
+          <ul> 
+        <li>Bread + Dragon Meat = Dragon Meat Buns</li> </br>
+        <li> Bread + Beef = Beef Buns</li></br>
+        <li> Bread + Chicken = Chicken Buns</li></br>    
+        </ul>
+        
+        
+        </div>
+        <div id = "rightPage" class = "page">
+          <h5> Note: Ingredients should be selected based on the order given </h5>
+          <ul>
+
+        <li> Rice + Harpy Eggs = Harpy Eggs over Rice</li> </br>
+          <li> Cabbage + Carrots + Enoki Mushrooms (the white lump under potatoes) + Walking Mushrooms + Tomatoes = Salad</li>
+
+
+
+          
+        </ul>
+        </div>
+        </div>
+
+      <div> <button id = "buttonReset" class = "button" onclick = reset()> Reset all ingredients </button></div>
+
+      <div id = "button"> <button class = "button" id = "buttonCook" > Cook </button>
+
+      
+
+      <div id = "ing-table">
+      
+     
+      <div id = "ingredients">
+
+        
+          <div id = "bread" class = "ing" > </div>
+          <div id = "rice" class = "ing">  </div>
+       
+          <div id = "potatoes" class = "ing"> </div>
+          <div id = "walkingMushrooms" class = "ing"> </div>
+
+          <div id = "enokiMushrooms" class = "ing"> </div>
+          <div id = "dragonMeat" class = "ing"> </div>
+
+          <div id = "beef" class = "ing"> </div> 
+          <div id = "chicken" class = "ing"> </div>
+
+          <div id = "harpyEggs" class = "ing"> </div>
+          <div id = "cabbage" class = "ing"> </div>
+
+          <div id = "carrots" class = "ing"> </div>
+          <div id = "cheese" class = "ing"> </div>
+
+          <div id = "tomatoes" class = "ing"> </div>
+         
+       
+
+        
+      </div>
+
+      
+
+      <div id = "cookingTable">
+        <div id = "cookText"> </div>
+        <div id = "cookImage"> </div>
+
+        
+      </div>
+
+        
+        
+      </div>
+    </div>
+       </section>
+
+    
+
+
+    
+
+    
+
+
+    
+
+
+
+
+
+
+
+
+
+      <!--Sources --->
+      <button id="Source-Button" onclick="showSource()">Show References</button>
+      <div id="Source-Content" style="display: none">
+        <h9>
+          References: <br />
+          <br />
+
+          Pinterest. (n.d.). Pinterest.
+          https://ph.pinterest.com/pin/3448137208806309/
+          <br /><br />
+          Pinterest. (n.d.). Pinterest.
+          https://ph.pinterest.com/pin/679832506241489655/
+          <br /><br />
+          Pinterest. (n.d.). Pinterest.
+          https://ph.pinterest.com/pin/890586895047788681/
+          <br /><br />
+          Pinterest. (n.d.). Pinterest.
+          https://ph.pinterest.com/pin/1132022056325080797/
+          <br /><br />
+          W3Schools.com. (n.d.).
+          https://www.w3schools.com/howto/howto_js_toggle_hide_show.asp
+          <br /><br />
+          W3Schools.com. (n.d.).
+          https://www.w3schools.com/css/css3_gradients.asp
+          <br /><br />
+          W3Schools.com. (n.d.). https://www.w3schools.com/css/css3_shadows.asp
+          <br /><br />
+          Pinterest. (n.d.). Pinterest.
+          https://ph.pinterest.com/pin/865465253390673092/
+        </h9>
+      </div>
+    </div>
+
+    <!-- Column for Right Sidebar-->
+      <div class="column" id="sidebar-right"></div>
+
+    <!--Copyright Footer --->
+    <footer>
+      <p>Copyright &copy; Frias & Nacino</p>
+    </footer>
+
+    <script defer src="kitchen.js""></script>
+  </body>
+</html>
