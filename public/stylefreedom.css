@@ -1,0 +1,284 @@
+/* --- FONTS --- */
+@import url('https://fonts.googleapis.com/css2?family=Atma:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Atma:wght@300;400;500;600;700&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* --- GENERAL STUFF --- */
+html {
+  font-family: "Sour Gummy";
+  height: 100%;
+}
+body {
+  height: 100%;
+  background-image: url("img/background.png");
+  background-repeat: repeat-x;
+}
+
+#main-content {
+  text-align: center;
+  margin: auto;
+  width: 60%;
+  height: 100%;
+  padding: 0;
+}
+
+/* Text */
+input {
+  text-align: center;
+}
+
+
+h1 {
+  font-size:30px;
+  line-height:20px;
+}
+h3 {
+  font-size: 20px;
+  line-height:20px;
+}
+p, caption {
+  text-shadow: 0 0 5px white, 0 0 5px white, 0 0 5px white;
+}
+
+/* Center */
+header,
+section,
+footer {
+  text-align: center;
+}
+
+/* --- DIV --- */
+#div-index-header {
+  margin: 50px 0 50px 0;
+}
+
+#div-index-content {
+  align-content: center;
+  margin: 50px auto 50px auto;
+  width: 80%;
+  height: 250px;
+  border-style: solid;
+  border-width: 3px;
+  border-radius: 50px;
+  padding: 10px 0 10px 0;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  overflow: hidden;
+}
+
+#div-index-button-left {
+  margin: auto auto auto 25px;
+  height: 60px;
+  width: 60px;
+}
+
+#div-index-button-right {
+  margin: auto 25px auto auto;
+  height: 60px;
+  width: 60px;
+}
+
+#div-index-img {
+  margin: auto auto auto auto;
+  padding: 10px;
+  height: 11.375em;
+  width: 11.375em;
+  img {
+    height: 9.375em;
+    margin: 0 auto auto auto;
+  }
+  p {
+    line-height: 0px;
+    margin: ;
+  }
+  h3 {
+    margin: -4px 0 10px 0;
+  }
+}
+
+/* --- NAV BAR --- */
+nav {
+  background-image: linear-gradient(#f5f0f4, #ffffff);
+  filter: drop-shadow(0 0 15px #a937e6);
+  margin: 30px auto 0 auto;
+  padding: 20px 10px 10px 10px;
+  text-align: center;
+  width: 55%;
+  height: 15%;
+  border-width: 0 3px 3px 3px;
+  border-radius: 50px;
+}
+
+nav a img {
+  width: 8%;
+  height: 8%;
+  margin: 5px 25px 5px 25px;
+}
+nav a img:hover {
+  scale: 1.1;
+  filter: drop-shadow(0 0 10px #ff57e950) drop-shadow(0 0 10px #ff57e950)
+    drop-shadow(0 0 10px #ff57e950);
+}
+
+/* --- HEADINGS / TEXT --- */
+
+nav h1 {
+  line-height: 15px;
+  margin: 10px auto 20px auto;
+  color: #120a24;
+  text-shadow: 0px 0px 5px #c272ee70;
+}
+
+#div-index-header h1,
+h3 {
+  line-height: 8px;
+}
+
+/* --- IMAGES --- */
+
+.gallery-index-img {
+  width: 50px;
+  height: 50px;
+}
+
+#freedomBoard {
+  margin: auto;
+  background-color: #ff57e950;
+  border: 5px double #a937e6;
+  width: 550px;
+  padding: 20px;
+}
+
+.title {
+  text-align: center;
+  background-image: radial-gradient(#ff57e950, #fecaff);
+  border: 5px double #a937e6;
+}
+
+.divider {
+  text-align: center;
+  background-image: radial-gradient(#ff57e950, #fecaff);
+}
+
+/* --- FREEDOM BOARD --- */
+
+#free-chatbox {
+  width: 100%;
+  height: 350px;
+  margin: 5px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  .free-msg {
+    box-sizing: border-box;
+    border: 5px double #a937e6;
+    background-color: #fecaff;
+    border-radius: 30px;
+    width: 95%;
+    min-height: 50px;
+    margin: 10px;
+    margin-right: auto;
+    margin-left: auto;
+    float: bottom;
+    display: grid;
+    grid-template-columns: 25% 75%;
+    padding: 5px;
+    .msg-name {
+      text-align: center;
+      padding-top: 12px;
+      vertical-align: middle;
+      text-overflow: ellipsis;
+      overflow: hidden;
+    }
+    .msg-text {
+      padding: 8px;
+      text-wrap-mode: wrap;
+      text-wrap-style: balance;
+      line-height: 15px;
+      text-overflow: ellipsis;
+    }
+  }
+}
+
+#free-input {
+  width: 100%;
+  margin: 5px;
+  padding: 5px;
+  box-sizing: border-box;
+  form {
+  display: grid;
+  grid-template-columns: 25% 50% 25%;
+    input {
+      margin: 5px;
+    }
+  }
+}
+
+/* --- FREEDOM MENU --- */
+
+#menu {
+  background-color: white;
+  height: 50px;
+  width: auto;
+  #support{
+    
+  }
+  #icons {
+    text-align: right;
+    
+  }
+
+}
+
+/* --- FREEDOM BUTTONS --- */
+
+#free-name, #free-text, #submit {
+  background-image: radial-gradient(#fecaff, #f283ff, #a500ff);
+  border: 5px double black;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  margin: auto 0;
+  align-content: center;
+}
+
+#free-name:hover, #free-text:hover, #submit:hover {
+  background-image: radial-gradient(#a500ff, #f283ff, #fecaff);
+}
+
+
+/* --- SOCMED AND SOURCES --- */
+#SM-Button, #Source-Button {
+  background-image: radial-gradient(#fecaff, #f283ff, #a500ff);
+  border: 5px double black;
+  cursor: pointer;
+  text-align: center;
+  margin: auto 0;
+  align-content: center;
+  padding: 10px 20px;
+}
+
+#SM-Button:hover, #Source-Button:hover{
+   background-image: radial-gradient(#a500ff, #f283ff, #fecaff);
+}
+
+#SM-Content, #Source-Content{
+   background-image: radial-gradient(#a500ff, #f283ff, #fecaff);
+  border: 5px double black;
+  margin: auto;
+  text-align: center;
+}
+
+#SocMedSource {
+  margin:auto;
+  text-align: center;
+}
+
+#currency {
+  width: 6em;
+  height: 2em;
+  margin: auto;
+  text-align: center;
+  padding-top: 5px;
+  background-image: linear-gradient(#f5f0f4, #ff00dd70, transparent);
+  filter: drop-shadow(0 0 15px #a937e6);
+  border-radius: 50px;
+}
