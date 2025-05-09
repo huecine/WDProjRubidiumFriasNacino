@@ -1,0 +1,588 @@
+/* --- FONTS --- */
+@import url("https://fonts.googleapis.com/css2?family=Atma:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Atma:wght@300;400;500;600;700&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap");
+
+
+/* --- GENERAL STUFF --- */
+html {
+  font-family: "Sour Gummy";
+  background-color: #18003d;
+  height: 100vh;
+}
+
+#main-content {
+  text-align: center;
+  margin: auto;
+  width: 60%;
+  padding: 0;
+}
+
+/* Text */
+h1 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 20px;
+}
+p {
+  color: white;
+}
+
+/* Center */
+header,
+section,
+footer {
+  text-align: center;
+}
+
+/* --- DIV --- */
+#div-index-header {
+  margin: 50px auto 50px auto;
+  height: fit-content;
+  padding: 10px;
+  width: 50%;
+  border-radius: 80px;
+  background-image: linear-gradient(#f5f0f450, #e2a1da50);
+  animation-name: sunsetshadow;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  h1,
+  h3 {
+    color: white;
+    text-shadow: 0px 0px 10px #ffffff40;
+  }
+  img {
+    height: inherit;
+    width: inherit;
+    filter: drop-shadow(0 0 10px #ffffff40);
+  }
+}
+
+#div-shop-gallery {
+  
+}
+
+
+
+
+
+/* --- NAV BAR --- */
+nav {
+  background-image: linear-gradient(#f5f0f4, #ffffff);
+  filter: drop-shadow(0 0 15px #a937e6);
+  margin: 30px auto 0 auto;
+  padding: 20px 10px 10px 10px;
+  text-align: center;
+  width: 45%;
+  height: 15%;
+  border-width: 0 3px 3px 3px;
+  border-radius: 50px;
+}
+
+nav a img {
+  width: 8%;
+  height: 8%;
+  margin: 5px 25px 5px 25px;
+}
+nav a img:hover {
+  scale: 1.1;
+  filter: drop-shadow(0 0 10px #ff57e950) drop-shadow(0 0 10px #ff57e950)
+    drop-shadow(0 0 10px #ff57e950);
+}
+
+/* --- HEADINGS / TEXT --- */
+
+nav h1 {
+  line-height: 15px;
+  margin: 10px auto 20px auto;
+  color: #120a24;
+  text-shadow: 0px 0px 5px #c272ee70;
+}
+
+#div-index-header h1,
+h3 {
+  line-height: 8px;
+}
+
+/* --- IMAGES --- */
+
+.gallery-index-img {
+  width: 50px;
+  height: 50px;
+}
+
+#home-body {
+  background-image: url("");
+}
+
+/* --- SIDE BANNER --- */
+#sidebar-left {
+  float: left;
+  top: 0;
+  left: 0;
+  position: absolute;
+  background-color: black;
+  background-image: url("img/background.png");
+  min-height: 100vh;
+  width: 20%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#sidebar-right {
+  float: right;
+  top: 0;
+  right: 0;
+  position: absolute;
+  background-color: black;
+  background-image: url("img/background.png");
+  min-height: 100vh;
+  width: 20%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* --- BUTTONS --- */
+
+.gallery-button-div {
+  align-content: center;
+}
+
+.gallery-button {
+  height: 40px;
+  width: 40px;
+  background-color: transparent;
+  border-color: transparent;
+  border-radius: 50%;
+  cursor: pointer;
+  img {
+    align-content: center;
+    height: 40px;
+    width: 40px;
+  }
+}
+
+.gallery-button img:hover {
+  height: 45px;
+  width: 45px;
+  filter: drop-shadow(0 0 5px #ff57e950) drop-shadow(0 0 5px #ff57e950)
+    drop-shadow(0 0 5px #ff57e950);
+}
+
+#div-index-button-left:hover {
+  animation-name: arrowleft;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-out;
+}
+
+#div-index-button-right:hover {
+  animation-name: arrowright;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-out;
+}
+
+@keyframes arrowleft {
+  0% {
+    translate: 0px 0px;
+  }
+  50% {
+    translate: -10px 0px;
+  }
+  100% {
+    translate: 0px 0px;
+  }
+}
+
+@keyframes arrowright {
+  0% {
+    translate: 0px 0px;
+  }
+  50% {
+    translate: 10px 0px;
+  }
+  100% {
+    translate: 0px 0px;
+  }
+}
+
+#div-index-content {
+  animation-name: floating;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease;
+  img:hover,
+  p:hover,
+  h3:hover {
+    filter: drop-shadow(0 0 5px #ff57e950) drop-shadow(0 0 5px #ff57e950)
+      drop-shadow(0 0 5px #ff57e950);
+  }
+  img {
+    animation-name: pulsing;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+  }
+}
+
+@keyframes floating {
+  0% {
+    translate: 0px 0px;
+  }
+  50% {
+    translate: 0px -10px;
+  }
+  100% {
+    translate: 0px 0px;
+  }
+}
+
+@keyframes pulsing {
+  0% {
+    scale: 1;
+  }
+  50% {
+    scale: 1.05;
+  }
+  100% {
+    scale: 1;
+  }
+}
+
+@keyframes sunsetshadow {
+  0% {
+    filter: drop-shadow(0 0 5px #8957ff) drop-shadow(0 0 5px #8957ff);
+  }
+  15% {
+    filter: drop-shadow(0 0 5px #b357ff) drop-shadow(0 0 5px #b357ff);
+  }
+  35% {
+    filter: drop-shadow(0 0 5px #db57ff) drop-shadow(0 0 5px #db57ff);
+  }
+  50% {
+    filter: drop-shadow(0 0 5px #ff57db) drop-shadow(0 0 5px #ff57db);
+  }
+  75% {
+    filter: drop-shadow(0 0 5px #db57ff) drop-shadow(0 0 5px #db57ff);
+  }
+  95% {
+    filter: drop-shadow(0 0 5px #b357ff) drop-shadow(0 0 5px #b357ff);
+  }
+  100% {
+    filter: drop-shadow(0 0 5px #8957ff) drop-shadow(0 0 5px #8957ff);
+  }
+}
+
+#SM-Button,
+#Source-Button {
+  background-image: radial-gradient(#fecaff, #f283ff, #a500ff);
+  border: 5px double black;
+  cursor: pointer;
+  text-align: center;
+  align-content: center;
+  padding: 10px 20px
+}
+
+#SM-Button:hover,
+#Source-Button:hover {
+  background-image: radial-gradient(#a500ff, #f283ff, #fecaff); margin: auto;
+}
+
+#SM-Content,
+#Source-Content {
+  background-image: radial-gradient(#a500ff, #f283ff, #fecaff);
+  border: 5px double black;
+  margin: auto;
+  text-align: center;
+}
+
+/* ---------------------------------------- */
+
+#shopcontent {
+  margin: auto;
+  width: 700px;
+  height: 500px;
+  display: grid;
+  margin-top: 40px;
+  grid-template-columns: 50% 50%;
+  position: relative;
+  z-index: 90;
+}
+
+#divdesc {
+  width: 15em;
+  height: 400px;
+  padding: 30px 25px;
+  margin: 13px auto auto 0;
+  background-image: linear-gradient(#f5f0f4, #ff00dd70, #ff00dd05);
+  filter: drop-shadow(0 0 15px #a937e6);
+  border-radius: 50px;
+  animation-name: floating;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease;
+}
+
+#imagedesc {
+  height: 200px;
+  filter: drop-shadow(0 0 10px #ffffff) drop-shadow(0 0 10px #ffffff);
+}
+
+#namedesc {
+  z-index: 20;
+  width: 90%;
+  margin: -10px auto auto auto;
+  position: relative;
+  padding-top: 5px;
+  height: 10%;
+  top: -20px;
+  background-image: linear-gradient(#f5f0f470, #e2a1da70);
+  border-radius: 50px;
+  animation-name: sunsetshadow;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  font-size: x-large;
+}
+
+#pricedesc {
+  height: 5%;
+  margin: -10px auto 0px auto;
+  width: 60%;
+  position: relative;
+  background-image: linear-gradient(#f5f0f470, #e2a1da70);
+  border-radius: 50px;
+  animation-name: sunsetshadow;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+#descdesc {
+  box-sizing: border-box;
+  width: 100%;
+  margin: 10px auto;
+  height: 30%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  padding: 30px 15px;
+  p {width: 10px;}
+  background-image: linear-gradient(#f5f0f470, #e2a1da70);
+  border-radius: 50px;
+  animation-name: sunsetshadow;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+#purchdesc {
+  width: 75%;
+  height: 50px;
+  z-index: 10;
+  position: relative;
+  margin: 0 auto;
+  background-image: linear-gradient(#f5f0f470, #e2a1da70);
+  border-radius: 50px;
+  animation-name: sunsetshadow;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  font-size: xx-large;
+}
+
+/* ------------------------------------- */
+
+#divgallery {
+  background-image: linear-gradient(#f5f0f470, #e2a1da70);
+  border-radius: 50px;
+  animation-name: sunsetshadow;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  width: 100%;
+  height: 90%;
+  padding: 20px 25px;
+  margin: 0 0 0 -40px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.shopheader {
+  background-image: linear-gradient(#f5f0f4, #ff00dd70);
+  animation-name: sunsetshadow;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  border-radius: 50px;
+  width: 100%;
+  height: 10%;
+  margin: 10px auto;
+  font-size: xx-large;
+  text-align: center;
+}
+
+#gacha {
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 30% 70%;
+  display: grid;
+  height: 30%;
+  div {border-radius: 20px; margin: 5px;}
+}
+#gachaimage {
+  grid-row-start:1;
+  grid-row-end: 3;
+  margin: auto;
+  width: 80%;
+  height: 100%;
+  resize: none;
+  filter: drop-shadow(0 0 10px #ffffff) drop-shadow(0 0 10px #ffffff);
+background-image: url(img/ques.png); background-size: cover;}
+#gachaprice {background-image: linear-gradient(#f5f0f4, #a81aea70);
+            animation-name: sunsetshadow;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;}
+#gachapurch {background-image: linear-gradient(#f5f0f4, #a81aea70);
+            padding-top: 10px;
+            font-size: 50px;
+            animation-name: sunsetshadow;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;}
+
+.item {display: grid; grid-template-columns: 33% 33% 33%;
+      div {margin: 5px;}
+      }
+.itemwhole {height: 90%; grid-template-rows: 70% 30%; display: grid;background-image: linear-gradient(#f5f0f4, #a81aea70);
+           animation-name: sunsetshadow;
+           animation-duration: 10s;
+           animation-iteration-count: infinite;
+           animation-timing-function: linear; border-radius: 20px;}
+.itemimg {filter: drop-shadow(0 0 10px #ffffff) drop-shadow(0 0 10px #ffffff); margin: 15px auto; width: 85%; height: 85%;}
+.itemimg:hover {animation-name: enlargen; animation-duration: 0.25s; animation-fill-mode: forwards;}
+.itemprice {background-image: linear-gradient(#f5f0f4, #ff00dd90);
+           border-radius: 50px;
+           padding-top: 5%;
+           width: 90%; margin: -20px 30px 0 30px; height: 50%;
+           }
+.itemprice:hover {animation-name: enlargen; animation-duration: 0.25s; animation-fill-mode: forwards;} 
+
+.itemimg:active, .itemprice:active {transform: scale(0.90);}
+
+/* animations */
+@keyframes enlargen {
+  100% {scale: 1.1; }
+}
+
+
+@keyframes sunsetshadow {
+  0% {
+    filter: drop-shadow(0 0 5px #8957ff) drop-shadow(0 0 5px #8957ff);
+  }
+  15% {
+    filter: drop-shadow(0 0 5px #b357ff) drop-shadow(0 0 5px #b357ff);
+  }
+  35% {
+    filter: drop-shadow(0 0 5px #db57ff) drop-shadow(0 0 5px #db57ff);
+  }
+  50% {
+    filter: drop-shadow(0 0 5px #ff57db) drop-shadow(0 0 5px #ff57db);
+  }
+  75% {
+    filter: drop-shadow(0 0 5px #db57ff) drop-shadow(0 0 5px #db57ff);
+  }
+  95% {
+    filter: drop-shadow(0 0 5px #b357ff) drop-shadow(0 0 5px #b357ff);
+  }
+  100% {
+    filter: drop-shadow(0 0 5px #8957ff) drop-shadow(0 0 5px #8957ff);
+  }
+}
+
+@keyframes floating {
+  0% {
+    translate: 0px 5px;
+  }
+  50% {
+    translate: 0px -5px;
+  }
+  100% {
+    translate: 0px 5px;
+  }
+}
+
+#currency {
+  width: 6em;
+  height: 2em;
+  margin: auto;
+  text-align: center;
+  padding-top: 5px;
+  background-image: linear-gradient(#f5f0f4, #ff00dd70, transparent);
+  filter: drop-shadow(0 0 15px #a937e6);
+  border-radius: 50px;
+}
+
+
+
+#modal {
+  position: absolute;
+  z-index: 10000;
+  margin-left: 26.5%;
+  margin-top: 15vh;
+  width: 41%;
+  height: 120px;
+  display: none;
+  background-image: linear-gradient(#f5f0f4, #e2a1da98);
+  font-weight: bold;
+  border-radius: 50px;
+  padding: 20px 20px 20px 20px;
+  box-shadow: 0px 0px 20px #5f23b8;
+  transition: display 2s;
+  h1 {
+    display: flex;
+    width: fit-content;
+    text-align: center;
+    margin: auto;
+  }
+  #modal-close {
+    display: block;
+    position: absolute;
+    right: 6%;
+    top: 5%;
+    font-size: xx-large;
+  }
+  #modal-close:hover {
+    animation-name: enlargen; animation-duration: 0.25s; animation-fill-mode: forwards;
+  }
+  #modal-content{
+    box-sizing: border-box;
+    background-color:  #9568d910;
+    box-shadow: 0px 0px 30px inset #5f23b850;
+    width: 98%;
+    height: 50%;
+    margin: auto;
+    border-radius: inherit;
+    text-align: center;
+    margin-top: 15px;
+    padding-top: 20px;
+    padding-left: 20px;
+    text-shadow: 0 0 5px #5f23b850;
+  }
+}
+
+footer {
+  margin: -20px 0px;
+}
+
+@keyframes gacha {
+  0% {background-image: url(gacha/gacha1.png);}
+  33% {background-image: url(gacha/gacha2.png);}
+  66% {background-image: url(gacha/gacha3.png);}
+  100% {background-image: url(gacha/gacha4.png);}
+}
