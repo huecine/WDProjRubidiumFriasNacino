@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Little Critters | Your Critter</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="keywords" content="cs3,html,css,pshs" />
+    <meta name="description" content="Tamagotchi-inspired Digital Pet Game" />
+    <meta name="author" content="Amber Niccole Nacino, Sabrina Frias" />
+    <link rel="icon" type="image/png" href="/img/icon.png" />
+    <meta name="revised" content="Dec 2024" />
+    <link href="stylefreedom.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body onload="dataInitialize()">
+    <!--Header / Navigation Bar-->
+    <header>
+      <nav>
+        <a href="/index"><img src="img/home.png" /></a>
+        <a href="/game"><img src="img/egg.png" /></a>
+        <a href="/instru"><img src="img/ques.png" /></a>
+        <a href="/itemshop"><img src="img/shop.png" /></a>
+        <a href="/kitchen"><img src="img/kitchen.png" /></a>
+        <a href="/freedom"><img src="img/chat.png"/></a>
+        <h1>Your Critter</h1> <div id="currency">0</div>
+      </nav>
+    </header>
+
+    <h2 class = title>Freedom Board!</h2>
+
+    <div id = "menu" > 
+      <div id = "support"> </div>
+      <div id = "icons"> 
+        <a  href= "https://www.tiktok.com/"><img src="img/tiktok.png" style = "width: 50px; height: 50px;"/></a>
+      </div>
+     </div>
+  <div class = "divider">
+    <h4> ₊˚⊹⚬✮⋆˙₊˚⊹ .𖥔 ݁ ˖. ݁₊ ⊹ . ݁˖ . ݁.𖥔 ݁ ˖ ˗ˏˋ ★ ˎˊ˗˗ˏˋ ★ ˎˊ˗˗ˏˋ ★ ˎˊ˗˗ˏˋ ★ ˎˊ˗ ── .𖥔 ݁ ˖. ݁₊ ⊹ . ݁˖ . ݁.𖥔 ݁ ˖ .⋆.˚𖦹 ♫ ✸</h4> </div>
+    
+    <div id = freedomBoard>
+      If text messages are missing, please refresh the page.
+      <div id = 'free-chatbox'>
+
+        {{#each msgList}}
+        <div class = 'free-msg'>
+        <div class = 'msg-name'>{{this.name}}</div>
+        <div class = 'msg-text'>{{this.text}}</div>
+        </div>
+        {{/each}}
+        
+      </div>
+
+      
+      <div class = "divider">
+        <h4> ☆⋆｡𖦹°‧★⋆⋆｡˚ .𖥔 ˗ˏˋ ★ ˎˊ˗ ˗ˏˋ ★ ˎˊ˗ ˗ˏˋ ★ ˎˊ˗ ˗ˏˋ ★ ˎˊ˗ ˗ˏˋ ★ ˎˊ˗ ☆⋆｡𖦹°‧★⋆⋆｡˚ .𖥔</h4> </div>
+      <div id = 'free-input'>
+        
+      <form action = '/postmsg' method='GET'>
+        <input id="free-name" name="name" type="text" value='Anon'></input>
+        <input id="free-text" name="text" type="text" value='Type your message here!'></input>
+        <input id = "submit" type="submit" value="Post" onclick="localStorage.setItem('free-name', document.getElementById('free-name').value)"></input>
+      </form>
+        
+      </div>
+    </div>
+    <div class = "divider">
+      <h4> ₊˚⊹⚬✮⋆˙₊˚⊹ .𖥔 ݁ ˖. ݁₊ ⊹ . ݁˖ . ݁.𖥔 ݁ ˖ ˗ˏˋ ★ ˎˊ˗˗ˏˋ ★ ˎˊ˗˗ˏˋ ★ ˎˊ˗˗ˏˋ ★ ˎˊ˗ ── .𖥔 ݁ ˖. ݁₊ ⊹ . ݁˖ . ݁.𖥔 ݁ ˖ .⋆.˚𖦹 ♫ ✸</h4> </div>
+
+    
+
+
+
+    <div id = "SocMedSource">
+    <button id = "SM-Button" onclick = "showSM()"> Show Social Media  </button>
+    <div id = "SM-Content" style = "display:none" >
+      <ul>
+        <li> Insta (to be made) </li>
+        <li> Facebook (to be made) </li>
+        <li> Discord Server (to be made) </li>
+      </ul>
+    </div>
+
+      <button id="Source-Button" onclick="showSource()">Show References</button>
+      <div id="Source-Content" style="display: none">
+        <h9>
+          References: <br />
+          <br />
+
+          Pinterest. (n.d.). Pinterest.
+          https://ph.pinterest.com/pin/3448137208806309/
+
+          <br /><br />
+          Pinterest. (n.d.). Pinterest.
+          https://ph.pinterest.com/pin/679832506241489655/
+          <br /><br />
+          Pinterest. (n.d.). Pinterest.
+          https://ph.pinterest.com/pin/890586895047788681/
+          <br /><br />
+          Pinterest. (n.d.). Pinterest.
+          https://ph.pinterest.com/pin/1132022056325080797/
+          <br /><br />
+          W3Schools.com. (n.d.).
+          https://www.w3schools.com/howto/howto_js_toggle_hide_show.asp
+          <br /><br />
+          W3Schools.com. (n.d.).
+          https://www.w3schools.com/css/css3_gradients.asp
+          <br /><br />
+          W3Schools.com. (n.d.). https://www.w3schools.com/css/css3_shadows.asp
+          <br /><br />
+          Pinterest. (n.d.). Pinterest.
+          https://ph.pinterest.com/pin/865465253390673092/
+        </h9>
+      </div>
+    </div>
+    <script defer src="script.js">
+  </script>
+  </body>
+</html>

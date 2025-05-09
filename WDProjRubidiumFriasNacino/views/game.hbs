@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Little Critters | Your Critter</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="keywords" content="cs3,html,css,pshs" />
+    <meta name="description" content="Tamagotchi-inspired Digital Pet Game" />
+    <meta name="author" content="Amber Niccole Nacino, Sabrina Frias" />
+    <link rel="icon" type="image/png" href="/img/icon.png" />
+    <meta name="revised" content="Dec 2024" />
+    <link href="stylegame.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body onload="dataInitialize()">
+    <!--Header / Navigation Bar-->
+    <header>
+      <nav>
+        <a href="/index"><img src="img/home.png" /></a>
+        <a href="/game"><img src="img/egg.png" /></a>
+        <a href="/instru"><img src="img/ques.png" /></a>
+        <a href="/itemshop"><img src="img/shop.png" /></a>
+        <a href="/kitchen"><img src="img/kitchen.png" /></a>
+        <a href="/freedom"><img src="img/chat.png"/></a>
+        <h1>Your Critter</h1> <div id="currency">0</div>
+      </nav>
+    </header>
+
+    <div class="column" id="main-content">
+
+      
+      <!--Column for Game Content-->
+      <div id="div-game-content">
+        <!-- Left Side for Pet Statistics-->
+        <div class="game-content-column" id="div-stats">
+          <!--PROGRESS BAR FOR HUNGER--->
+          <div class="pet-statbar" id="pet-stat-eat">
+            <div class="pet-statprog" id="pet-prog-eat">
+              <div class="pet-statmove" id="pet-move-eat"></div>
+            </div>
+            <p id="pet-move-eat-num">80</p>
+          </div>
+          <!----->
+
+          <!--PROGRESS BAR FOR HYGIENE--->
+          <div class="pet-statbar" id="pet-stat-clean">
+            <div class="pet-statprog" id="pet-prog-clean">
+              <div class="pet-statmove" id="pet-move-clean"></div>
+            </div>
+            <p id="pet-move-clean-num">80</p>
+          </div>
+          <!----->
+
+          <!--PROGRESS BAR FOR LOVE--->
+          <div class="pet-statbar" id="pet-stat-love">
+            <div class="pet-statprog" id="pet-prog-love">
+              <div class="pet-statmove" id="pet-move-love"></div>
+            </div>
+            <p id="pet-move-love-num">80</p>
+          </div>
+          <!----->
+
+          <!--PROGRESS BAR FOR ENERGY--->
+          <div class="pet-statbar" id="pet-stat-rest">
+            <div class="pet-statprog" id="pet-prog-rest">
+              <div class="pet-statmove" id="pet-move-rest"></div>
+            </div>
+            <p id="pet-move-rest-num">80</p>
+          </div>
+          <!----->
+        </div>
+
+        <!--Column for Pet Name and Area --->
+        <div class="game-content-column" id="div-pet">
+          <!--Pet Name / Change Pet Name--->
+          <div>
+            <h1 id="pet-name">Critter</h1>
+            <br />
+            <button id="name-button" onclick="startName()">Change Name</button>
+          </div>
+          <!--Critter Animation --->
+          <img id="game-pet" src="img/anim/cat.gif" />
+          <br />
+          <caption style="text-align: bottom">
+            Your Critter
+          </caption>
+        </div>
+
+        <!--Column for Action Buttons with Image and Action Label --->
+        <div class="game-content-column" id="div-action">
+          <!--EAT -->
+          <div id="div-action-eat">
+            <button class="div-action-button" id="action-eat" onclick="feed()">
+              <img src="img/cake.jpg" />
+            </button>
+            <br />
+            <h7 class="button-text"> Feed </h7>
+          </div>
+
+          <!--CLEAN -->
+          <div id="div-action-clean">
+            <button
+              class="div-action-button"
+              id="action-clean"
+              onclick="shower()"
+            ></button>
+            <br />
+            <h7 class="button-text"> Clean </h7>
+          </div>
+
+          <!--LOVE -->
+          <div id="div-action-love">
+            <button
+              class="div-action-button"
+              id="action-love"
+              onclick="play()"
+            ></button>
+            <br />
+            <h7 class="button-text"> Play </h7>
+          </div>
+
+          <!--REST -->
+          <div id="div-action-rest">
+            <button
+              class="div-action-button"
+              id="action-rest"
+              onclick="sleep()"
+            ></button>
+            <br />
+            <h7 class="button-text"> Rest </h7>
+          </div>
+        </div>
+      </div>
+      
+      <!---Short Desc Button and Text -->
+      <button id="Short-Desc-Button" onclick="showShortDesc()">
+        Show Short Description
+      </button>
+      <div id="Short-Desc-Content" style="display: none">
+        <h7>
+          You'll need to make sure none of the bars go to zero. For now, the
+          Feed, Clean, Play, and Rest buttons won't lead to any other pages but
+          they will add some points to the bars. If the bars reach 0, the pet
+          will run away but that feature will be added in a later update. <br />
+          <br />
+
+          You can change the critter's name by clicking "Change Name" and
+          entering the desired name. This change is nor perminent and you can
+          rename your critter anytime you want.
+        </h7>
+      </div>
+      
+      <!--Sources --->
+      <button id="Source-Button" onclick="showSource()">Show References</button>
+      <div id="Source-Content" style="display: none">
+        <h9>
+          References: <br />
+          <br />
+
+          Pinterest. (n.d.). Pinterest.
+          https://ph.pinterest.com/pin/3448137208806309/
+          <br /><br />
+          Pinterest. (n.d.). Pinterest.
+          https://ph.pinterest.com/pin/679832506241489655/
+          <br /><br />
+          Pinterest. (n.d.). Pinterest.
+          https://ph.pinterest.com/pin/890586895047788681/
+          <br /><br />
+          Pinterest. (n.d.). Pinterest.
+          https://ph.pinterest.com/pin/1132022056325080797/
+          <br /><br />
+          W3Schools.com. (n.d.).
+          https://www.w3schools.com/howto/howto_js_toggle_hide_show.asp
+          <br /><br />
+          W3Schools.com. (n.d.).
+          https://www.w3schools.com/css/css3_gradients.asp
+          <br /><br />
+          W3Schools.com. (n.d.). https://www.w3schools.com/css/css3_shadows.asp
+          <br /><br />
+          Pinterest. (n.d.). Pinterest.
+          https://ph.pinterest.com/pin/865465253390673092/
+        </h9>
+      </div>
+    </div>
+
+    <!--Copyright Footer --->
+    <footer class="div-center">
+      <p>Copyright &copy; Frias & Nacino</p>
+    </footer>
+
+    <script defer src="script.js"></script>
+  </body>
+</html>

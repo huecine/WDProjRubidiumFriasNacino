@@ -1,0 +1,342 @@
+/* --- FONTS --- */
+@import url('https://fonts.googleapis.com/css2?family=Atma:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Atma:wght@300;400;500;600;700&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* --- GENERAL STUFF --- */
+html {
+  font-family: "Sour Gummy";
+  height: 100vh;
+}
+body {
+  background-image: url("img/background.png");
+background-repeat: repeat-x;
+}
+
+#main-content {
+  text-align: center;
+  margin: auto;
+  width: 60%;
+  height: 100%;
+  padding: 0;
+}
+
+/* Text */
+input {
+  text-align: center;
+}
+
+
+h1 {
+  font-size:30px;
+  line-height:20px;
+}
+h3 {
+  font-size: 20px;
+  line-height:20px;
+}
+p, caption {
+  text-shadow: 0 0 5px white, 0 0 5px white, 0 0 5px white;
+}
+
+#pet-name {
+  animation-name: floating;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease;
+  border: 5px double;
+  width: fit-content;
+  margin: auto;
+  height: 20px;
+  text-align: center;
+  padding: 10px 5px 10px 5px;
+  border-radius: 10px;
+  background-image: radial-gradient(circle, #a500ff , #f283ff, #fecaff);
+  box-shadow: 0 0 20px 10px #645394;
+
+}
+
+#Short-Desc-Content {
+  background-image: radial-gradient(#a500ff, #f283ff, #fecaff);
+  border-style: solid;
+  border-radius: 10px;
+  padding: 5px;
+  border-color: #ffe5f1;
+  margin: auto;
+  width: 350px;
+  text-align: center;
+  padding: 5px;
+}
+
+/* Center */
+header, section, footer {
+  text-align: center;
+}
+
+/* --- DIV --- */
+#div-index-header {
+  margin: 50px 0 50px 0;
+  padding: 1px;
+  background-image: radial-gradient(circle, #fecaff, #f283ff, #a500ff);
+  box-shadow: 0 0 20px 10px #645394;
+  text-align: center;
+  border-style: double;
+  border-width: 5px;
+  border-radius: 10px;
+  border-color: darkpurple;
+
+}
+
+#div-game-content{
+  display:grid;
+  grid-template-columns: 25% 50% 25%;
+  height:400px;
+}
+
+#div-stats {
+  display: grid;
+  grid-template-columns:25% 25% 25% 25%;
+}
+
+#div-action {
+  display:grid;
+  grid-template-columns:auto auto;
+}
+
+.div-action-button {
+  margin:0;
+}
+
+#div-stats {
+}
+
+.pet-statbar {
+  margin: auto;
+  width: 60%;
+  height: 100%;
+  p {
+    margin: 0;
+    text-align:center;
+  }
+}
+
+.pet-statprog {
+  overflow:hidden;
+  background-image: linear-gradient(white,#e9c7ff);
+  border-style: solid;
+  border-width: 2px;
+  border-color: black;
+  border-radius: 15px;
+  width: 100%;
+  height: 90%;
+  padding: 0;
+}
+
+.pet-statmove {
+  background-image: radial-gradient(circle, #fecaff, #f283ff, #a500ff);
+  border-radius: 10px;
+  float:bottom;
+  width: 70%;
+  height: 80%;
+  margin: 2px auto 0 auto;
+}
+
+
+nav {
+  background-image: linear-gradient(#f5f0f4, #ffffff);
+  filter: drop-shadow(0 0 15px #a937e6);
+  margin: 30px auto 100px auto;
+  padding: 20px 10px 10px 10px;
+  text-align: center;
+  width: 55%;
+  height: 15%;
+  border-width: 0 3px 3px 3px;
+  border-radius: 50px;
+}
+
+nav a img {
+  width: 8%;
+  height: 8%;
+  margin: 5px 25px 5px 25px;
+}
+nav a img:hover {
+  scale: 1.1;
+  filter: drop-shadow(0 0 10px #ff57e950) drop-shadow(0 0 10px #ff57e950)
+    drop-shadow(0 0 10px #ff57e950);
+}
+
+/* --- HEADINGS / TEXT --- */
+
+nav h1 {
+  line-height: 15px;
+  margin: 10px auto 20px auto;
+  color: #120a24;
+  text-shadow: 0px 0px 5px #c272ee70;
+}
+
+/* --- buttons --- */
+
+
+#action-eat{
+  height: fit-content;
+  width: fit-content;
+  background-image: url("img/cake.jpg");
+  background-size: cover;
+   background-position: center;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.div-action-button {
+  background-color: transparent;
+  img {
+  width: 70px;
+  height: 70px;
+  }
+}
+
+#action-clean {
+  height: 70px;
+  width: 70px;
+  background-image: url("https://i.pinimg.com/736x/25/10/43/2510438849b9ff05dfb31005578aeb5c.jpg");
+  background-size: cover;
+   background-position: center;
+   cursor: pointer;
+}
+
+
+#action-love {
+  height: 70px;
+  width: 70px;
+  background-image: url("https://i.pinimg.com/736x/64/99/c6/6499c6acce57ada128cd76f301cab905.jpg");
+  background-size: cover;
+   background-position: center;
+   cursor: pointer;
+}
+
+#action-rest{
+  height: 70px;
+  width: 70px;
+  background-image: url("https://i.pinimg.com/736x/f7/fe/41/f7fe413d1dc7d3c1b212b5aa59838b7a.jpg");
+  background-size: cover;
+   background-position: center;
+   cursor: pointer;
+}
+
+.button-text {
+background-image: radial-gradient(circle, #fecaff, #f283ff, #a500ff);
+padding: 2px;
+border-style: solid;
+border-width:2px;
+border-radius: 4px;
+}
+
+#action-clean:hover, #action-love:hover, #action-rest:hover, #action-eat:hover {
+  box-shadow: 3px 3px 3px purple;
+}
+
+#name-button {
+  padding: 10px 15px;
+
+  background-image: radial-gradient(circle, #fecaff, #f283ff, #a500ff);
+
+  cursor: pointer;
+
+  border: 5px double;
+  border-radius: 10px;
+
+  font-family: "Sour Gummy";
+  font-size: 15px;
+}
+
+#Short-Desc-Button {
+  background-image: radial-gradient(#fecaff, #f283ff, #a500ff);
+
+  border: 5px double black;
+  border-radius: 10px;
+
+  cursor: pointer;
+  text-align: center;
+  margin: auto;
+  padding: 10px 20px;
+
+}
+
+
+/* --- ANIAMTIONS --- */ 
+@keyframes floating {
+  0%   {translate: 0px 0px;}
+  50%  {translate: 0px -5px;}
+  100% {translate: 0px 0px;}
+}
+
+#SM-Button, #Source-Button {
+  background-image: radial-gradient(#fecaff, #f283ff, #a500ff);
+  border: 5px double black;
+  cursor: pointer;
+  text-align: center;
+  margin: 10px auto 10px auto;
+  align-content: center;
+  padding: 10px 20px;
+}
+
+#SM-Button:hover, #Source-Button:hover{
+   background-image: radial-gradient(#a500ff, #f283ff, #fecaff);
+}
+
+#SM-Content, #Source-Content{
+   background-image: radial-gradient(#a500ff, #f283ff, #fecaff);
+  border: 5px double black;
+  margin: auto;
+  text-align: center;
+}
+
+#currency {
+  width: 6em;
+  height: 2em;
+  margin: auto;
+  text-align: center;
+  padding-top: 5px;
+  background-image: linear-gradient(#f5f0f4, #ff00dd70, transparent);
+  filter: drop-shadow(0 0 15px #a937e6);
+  border-radius: 50px;
+}
+
+/* --- SIDE BANNER --- */
+#sidebar-left {
+  float: left;
+  top: 0;
+  left: 0;
+  position: absolute;
+  background-color: black;
+  background-image: url("img/background.png");
+  min-height: 100vh;
+  width: 20%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 100;
+}
+
+#sidebar-right {
+  float: right;
+  top: 0;
+  right: 0;
+  position: absolute;
+  background-color: black;
+  background-image: url("img/background.png");
+  min-height: 100vh;
+  width: 20%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 100;
+}
+
+#div-game-content {
+  margin-top: -50px;
+  background-image: linear-gradient(#f5f0f4, #e2a1da98);
+  border-radius: 50px;
+  box-sizing: content-box;
+  padding: 50px;
+  filter: drop-shadow(0px 0px 15px white);
+}
